@@ -30,6 +30,7 @@ This route has to support a GET call, and should give the user a way to input se
 
 To save this config, a route at https://xxxxxxxxx.com/plugin/your-inegration-name/setup will then be available. 
 Make a POST call to this route of which the body contains a json object.
+This enpoint will be available in the env file under 'setupEndpoint'.
 
 This json object will then be set on the env object when a call to your integration is made,
 so you can use it in your routes.
