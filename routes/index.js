@@ -27,7 +27,7 @@ router.get('/setup', (req, res) => {
   <div class="absolute inset-0 bg-gray-500 flex items-center justify-center text-white">
     <form action="${env.configEnpoint}" method="POST" class="flex flex-col">
       <label class="mb-4 text-4xl font-bold" for="message">What do you want to be returned?</label>
-      <input class="rounded mb-4 px-3 py-1 text-gray-400" id="message" type="text">
+      <input class="rounded mb-4 px-3 py-1 text-gray-400" id="message" name="message" type="text">
       <input class="rounded mb-4 px-3 py-1 hover:bg-green-200 text-gray-500 cursor-pointer" type="submit" value="submit">
     </form>
   </div>
